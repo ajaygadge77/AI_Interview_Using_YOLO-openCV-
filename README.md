@@ -43,3 +43,23 @@
 ```bash
 git clone https://github.com/yourusername/interviewguard.git
 cd interviewguard
+2. Set up environment (Miniconda recommended)
+bash
+Copy
+Edit
+conda create -n interviewcopilot python=3.10 -y
+conda activate interviewcopilot
+conda install -c conda-forge dlib face_recognition
+pip install streamlit opencv-python numpy ultralytics
+3. Place student reference image
+Create a folder named student_images/ and add a reference image named like:
+
+bash
+Copy
+Edit
+student_images/ajay_reference.jpg
+4. Run the app
+bash
+Copy
+Edit
+streamlit run app.py
